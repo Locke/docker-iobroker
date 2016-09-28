@@ -4,7 +4,7 @@ FROM mhart/alpine-node:0.12
 
 MAINTAINER André Wolski <andre@dena-design.de>
 
-RUN apk update && apk upgrade && apk add bash
+RUN apk update && apk upgrade && apk add bash python
 
 RUN mkdir -p /opt/iobroker/
 RUN cd /opt/iobroker && npm install iobroker --unsafe-perm && echo $(hostname) > .install_host
