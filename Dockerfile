@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:0.12
+FROM mhart/alpine-node:4
 
 # inspired by https://github.com/MehrCurry/docker-iobroker
 
