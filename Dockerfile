@@ -1,9 +1,10 @@
-FROM mhart/alpine-node:6
+FROM mhart/alpine-node:8
 
 # inspired by https://github.com/MehrCurry/docker-iobroker
 
 MAINTAINER André Wolski <andre@dena-design.de>
 
+RUN npm i -g npm
 RUN apk add --no-cache bash python build-base
 
 RUN mkdir -p /opt/iobroker/
